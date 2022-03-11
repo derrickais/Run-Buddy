@@ -11,12 +11,18 @@ body {
 
 /* Header Style Starts */
 header{
+    background-image: url(../images/hero-bg.jpeg);
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
     padding: 20 px 35px;
     background-color: #39a6b2;
     display: flex;
     justify-content: space-between;
     flex-wrap:wrap;
-
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 header h1 {
@@ -60,7 +66,8 @@ section {
 .hero {
     background-image: url("../images/hero-bg.jpeg");
     background-size: cover;
-    background-position: center; 
+    background-position: 80%;
+    background-attachment: fixed; 
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -353,6 +360,7 @@ footer a {
     header {
         padding-bottom: 0;
         justify-content: center;
+        position: relative;
     }
 
     header h1 {
